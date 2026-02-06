@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple:</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="idiot" class="hidden" src="images/img_You_Are_An_Idiot_screen.gif">
+    <img id="corinne" class="hidden" src="images/img_Corinne_Breton.jpg">
+
+    <img id="ensavoirplus1" class="show" src="images/img_star_fedora.gif">
+    <img id="ensavoirplus2" class="show" src="images/img_star_fedora.gif" onclick="enableIdiot()">
+
+    <h1 id="text_item">Section Table d'Harmonie</h1>
+    <br>
+
+    <div class="button_container">
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_angry_bird.mp3')">Angry Bird</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_metal_pipe.mp3')">Métal</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_augh.mp3')">Aaaauuugh</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_bad_to_the_bone.mp3')">Bad to the bone</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_bell.mp3')">Cloche</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_brain_fart.mp3')">"Brain fart"</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_burgerking.mp3')">Burger King</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_buzzer_correct.mp3')">Correct</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_buzzer_wrong.mp3')">Mauvais</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_cat_laugh.mp3')">Chat rit</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_disgust.mp3')">Dégueulasse</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_don_pollo.mp3')">Don Pollo</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_drake.mp3')">Drake</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_emotional_damage.mp3')">"Emotional damage"</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_english_or_spanish.mp3')">English or Spanish</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_fart.mp3')">Pet</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_fnaf_song.mp3')">FNAF</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_gay.mp3')">Gay</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_getout.mp3')">GET OUT!</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_god.mp3')">God is</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_goofy_comp.mp3')">Cartoon</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_holy_moly.mp3')">"Holy moly"</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_sisyphus.mp3')">Sisyphe</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_homelander.mp3')">Homelander</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_its_coming_out.mp3')">"It's coming out"</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_jojo.mp3')">Jojo</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_scooby_doo.mp3')">Scooby Doo</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_let_me_know.mp3')">Let me know</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_lethal_company.mp3')">1000 quota stare</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_lets_go_gambling.mp3')">Gambling</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_lil_phoebe.mp3')">Lil Phoebe</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_cave_noise.mp3')">Caverne</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_lobotomy.mp3')">Lobotomy</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_meow_meow_sad.mp3')">Meow meow</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_noot_noot.mp3')">Noot noot</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_npc_music.mp3')">Musique d'NPC</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_android.mp3')">Android</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_oh_my_pc.mp3')">"Oh my PC"</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_phone_linging.mp3')">"Phone ringing"</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_prowler.mp3')">Prowler</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_ram_sam_sam.mp3')">Ram sam sam</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_roblox_earrape.mp3')">Roblox</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_sad_hamster.mp3')">Hamster triste</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_scary_sound.mp3')">Derrière toi...</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_shadow_wizard.mp3')">Shadow wizard money gang</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_sleeping.mp3')">Roupiller</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_josh_hutcherson.mp3')">Josh Hutcherson</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_spongebob.mp3')">Disappointement</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_starman.mp3')">Starman</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_stroke_my_pickle.mp3')">Pickle</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_tom_scream.mp3')">Tom</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_jonkler.mp3')">Jonkler cart</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_vine_boom.mp3')">Boom</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_wait_wait_wait.mp3')">"Wait wait wait"</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_alarm.mp3')">Alarme</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_broke_boy_fein.mp3')">Edit 1</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_fnaf_edit.mp3')">Edit 2</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_king_baldwin.mp3')">Edit 3</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_skeleton_edit.mp3')">Edit 4</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_train_edit.mp3')">Edit 5</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_yippee.mp3')">Yippeee</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_lost_my_dog.mp3')">"I just lost my dog"</button>
+    <button id="sound_toggle" class="sound_button" onclick="playSound('sound_effects/snd_wish_i_knew.mp3')">I wish I knew</button>
+
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <button id="idiot_toggle" class="sound_button" onclick="playIdiot()">SURPRISE</button>
+    <button id="stop_toggle" class="sound_button">Stop</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
